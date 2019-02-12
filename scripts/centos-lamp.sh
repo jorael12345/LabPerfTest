@@ -32,7 +32,7 @@ mysql -u root -e "SHOW DATABASES";
 
 #Download starter Content
 cd /vagrant
-sudo -u vagrant wget --header="Authorization: token a964e1997ed4f535606ba46c16c02e0395ccdcc2" -q 'https://raw.githubusercontent.com/jorael12345/labPerf/master/files/index.html'
-sudo -u vagrant wget --header="Authorization: token a964e1997ed4f535606ba46c16c02e0395ccdcc2" -q 'https://raw.githubusercontent.com/jorael12345/labPerf/master/files/info.php'
+sudo -u vagrant wget -q https://raw.githubusercontent.com/jorael12345/LabPerfTest/master/files/index.html
+sudo -u vagrant wget -q https://raw.githubusercontent.com/jorael12345/LabPerfTest/master/files/index.html
 
 service httpd restart
